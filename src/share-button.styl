@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 network($amt)
   $width = ($amt * 60)px
@@ -25,12 +25,12 @@ network($amt)
 socialIcon($name)
   li[class*={"'" + $name + "'"}]
     background: convert($name)
- 
+
     &:before
       background-image: svg($name, '[fill]: #fff')
 
     &:after
-      background-image: svg($name, '[fill]: #000') 
+      background-image: svg($name, '[fill]: #000')
 
 networks = 'email' 'facebook' 'googlePlus' 'linkedin' 'pinterest' 'reddit' 'twitter' 'whatsapp'
 
@@ -218,4 +218,3 @@ share-button
 
     for name in networks
       socialIcon(name)
-
